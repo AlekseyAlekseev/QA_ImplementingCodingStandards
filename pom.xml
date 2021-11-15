@@ -23,7 +23,7 @@
         </dependency>
     </dependencies>
 
-    <reporting>
+    <build>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
@@ -36,13 +36,6 @@
                     <failsOnError>true</failsOnError>
                     <linkXRef>false</linkXRef>
                 </configuration>
-                <reportSets>
-                    <reportSet>
-                        <reports>
-                            <report>checkstyle</report>
-                        </reports>
-                    </reportSet>
-                </reportSets>
                 <executions>
                     <execution>
                         <id>check</id>
@@ -54,5 +47,5 @@
                 </executions>
             </plugin>
         </plugins>
-    </reporting>
+    </build>
 </project>
